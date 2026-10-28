@@ -1,8 +1,10 @@
 #include <iostream>
+#include "./header/version.h"
 
 int main()
 {
-  std::cout<<"Hello World!\n";
+  std::cout<<"Boot\n";
+  version();
 
   return 0;
 }
