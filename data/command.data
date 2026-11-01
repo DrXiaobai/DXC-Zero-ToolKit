@@ -1,0 +1,5 @@
+# === config ===
+image_view ./modules/image_view
+top /usr/bin/top
+help ./modules/help
+

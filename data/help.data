@@ -1,0 +1,5 @@
+help:
+  image_view / iv <image_path> -> viewer image
+  help -> get help
+  clear -> clean screen
+  exit -> exit
