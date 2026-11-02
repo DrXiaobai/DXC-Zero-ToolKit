@@ -3,3 +3,4 @@ help:
   help -> get help
   clear -> clean screen
   exit -> exit
+  verison / ver -> print version

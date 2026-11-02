@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <vector>
 #include <sstream>
+#include "./header/defines.h"
 #include <unistd.h>
 #include <sys/wait.h>
 #include <sys/stat.h>
@@ -26,6 +27,11 @@ std::string get_executable_dir()
   }
 
   return ".";
+}
+
+void version()
+{
+  std::cout<<VERSION_OF_TERM<<"\n";
 }
 
 int do_command(const std::vector<std::string> &args)
