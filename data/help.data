@@ -1,6 +1,7 @@
 help:
-  image_view / iv <image_path> -> viewer image
+  image-view / iv <image_path> -> view an image
   help -> get help
-  clear -> clean screen
+  clear -> clean(clear) the screen
   exit -> exit
   verison / ver -> print version
+  hex-view -> view a hex file

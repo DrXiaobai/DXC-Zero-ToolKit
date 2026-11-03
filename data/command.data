@@ -1,6 +1,7 @@
 # === config ===
-image_view ./modules/image_view
-iv ./modules/image_view
+image-view ./modules/image-view
+iv ./modules/image-view
 top /usr/bin/top
 help ./modules/help
+hex-view ./modules/hex-view
 

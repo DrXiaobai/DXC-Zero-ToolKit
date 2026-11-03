@@ -29,11 +29,6 @@ std::string get_executable_dir()
   return ".";
 }
 
-void version()
-{
-  std::cout<<VERSION_OF_TERM<<"\n";
-}
-
 int do_command(const std::vector<std::string> &args)
 {
   if(args.empty()) return -1;
@@ -171,6 +166,7 @@ int main(void)
       std::cout<<"\033[2J\033[H"<<std::flush;
       continue;
     }
+    if(input == "version" || input == "ver"){std::cout<<VERSION<<"\n"; continue;}
 
     std::vector<std::string> args;
     std::stringstream ss(input);
