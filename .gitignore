@@ -1,0 +1,11 @@
+dxcz-main
+
+*.o
+*.out
+
+.vscode/
+.idea/
+
+.DS_Store
+*.log
+
