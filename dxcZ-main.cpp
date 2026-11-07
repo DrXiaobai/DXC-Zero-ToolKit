@@ -57,37 +57,6 @@ int do_command(const std::vector<std::string> &args)
   }
 }
 
-/*
-int image_view(std::string &image_path)
-{
-  if(!image_path.empty() && image_path[0] == '~'){
-    const char *p_home = getenv("HOME");
-    if(p_home != 0){
-      image_path = std::string(p_home) + image_path.substr(1);
-    }
-  }
-
-  return do_command({"./modules/image_view", image_path});
-}
-
-
-void help()
-{
-  std::string help_path = get_executable_dir() + "/data/help.data";
-  std::ifstream file(help_path);
-  if(file.is_open()){
-    std::string line;
-    while(std::getline(file, line)){
-      std::cout<<line<<"\n";
-    }
-  }
-  else{
-    std::cerr<<"Error: Cannot load help.data at"<<help_path<<"\n";
-  }
-  return;
-}
-*/
-
 bool file_exists(const std::string &path)
 {
   struct stat buffer;
