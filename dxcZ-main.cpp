@@ -13,6 +13,18 @@
 
 void find_command(const std::vector<std::string> &args, const std::string &data_file, const std::string &run_path);
 
+std::string resolve_path(const std::string &run_path, const std::string &exec_path)
+{
+  if(!exec_path.empty() && exec_path[0]=='/'){
+    return exec_path;
+  }
+  if(exec_path.rfind("./", 0)==0){
+    return run_path+"/"+exec_path.substr(2);
+  }
+
+  return run_path+"/"+exec_path;
+}
+
 std::string get_executable_dir()
 {
   char p_buf[PATH_MAX];
@@ -118,6 +130,7 @@ int init_command_system(const std::string &data_path)
 int main(void)
 {
   const std::string path = get_executable_dir()+" -> ";
+
   std::string command = "";
   int running = 1;
   
@@ -176,13 +189,15 @@ void find_command(const std::vector<std::string> &args, const std::string &data_
       found = 1;
       
       std::vector<std::string> exec_args;
-
-      if(exec_path.rfind("./", 0) == 0){
+      
+      /*if(exec_path.rfind("./", 0) == 0){
         exec_args.push_back(run_path+"/"+exec_path.substr(2));
       }
       else{
         exec_args.push_back(exec_path);
-      }
+      }*/
+
+      exec_args.push_back(resolve_path(run_path, exec_path));
 
       for(size_t i=1;i<args.size();++i){
         exec_args.push_back(args[i]);
