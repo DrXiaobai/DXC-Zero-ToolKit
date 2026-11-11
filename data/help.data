@@ -7,3 +7,5 @@ help:
   hex-view -> view a hex file
   ls -> list the files and folders in the current directory
   ls <dir> -> list the files and folders in the <dir> directory
+  tree-ls -> list the files and folders in the current directory
+  tree-ls <dir> -> list the files and folders in the <dir> directory

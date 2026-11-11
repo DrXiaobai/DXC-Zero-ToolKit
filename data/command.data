@@ -1,6 +1,7 @@
 # === config ===
-image-view /modules/image-view
-iv /modules/image-view
-help /modules/help
-hex-view /modules/hex-view
-ls /modules/ls
+image-view ./modules/image-view
+iv ./modules/image-view
+help ./modules/help
+hex-view ./modules/hex-view
+ls ./modules/ls
+tree-ls ./modules/tree-ls
