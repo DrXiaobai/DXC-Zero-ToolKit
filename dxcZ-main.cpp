@@ -129,7 +129,7 @@ int init_command_system(const std::string &data_path)
 
 int main(void)
 {
-  const std::string path = get_executable_dir()+" -> ";
+  static const std::string path = get_executable_dir()+" -> ";
 
   std::string command = "";
   int running = 1;

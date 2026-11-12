@@ -1,7 +1,7 @@
 #ifndef DEFINES_H
 #define DEFINES_H
 
-#define VERSION "v0.1-a"
+#define VERSION "26v0.2"
 
 #endif
 
