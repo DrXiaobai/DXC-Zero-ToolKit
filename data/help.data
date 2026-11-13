@@ -9,3 +9,8 @@ help:
   ls <dir> -> list the files and folders in the <dir> directory
   tree-ls -> list the files and folders in the current directory
   tree-ls <dir> -> list the files and folders in the <dir> directory
+  cat <file1> <file2> ... -> view the file(s)
+  touch <file1> <file2> ... -> make file(s)
+  rm <file1>/<dir1> <file2>/<dir2> ... -> remove file(s) or directory(s)
+  mv <old_name> <new_name> -> rename file(s) or directory(s)
+  mv <file1> <file2> ... <path> -> move file(s) to directory

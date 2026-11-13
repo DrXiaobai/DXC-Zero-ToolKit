@@ -5,3 +5,7 @@ help ./modules/help
 hex-view ./modules/hex-view
 ls ./modules/ls
 tree-ls ./modules/tree-ls
+cat ./modules/cat
+touch ./modules/touch
+mkdir ./modules/mkdir
+rm ./modules/rm
